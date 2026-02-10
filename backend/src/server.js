@@ -1,0 +1,32 @@
+import express from 'express'
+import dotenv from 'dotenv';
+import cors from 'cors';
+import dns from "dns";
+
+import notesRoutes from './routes/notesRoutes.js'
+import { connectDB } from './config/db.js';
+import rateLimiter from './middleware/ratelimiter.js';
+
+
+dns.setServers(["1.1.1.1", "8.8.8.8"]); // or 1.1.1.1 + 1.0.0.1
+
+dotenv.config();
+
+
+const app = express();
+const PORT = process.env.PORT || 5001;
+
+//middleware
+app.use(cors({
+    origin: ['http://localhost:5173', 'http://localhost:5178', 'http://localhost:3000']
+}));
+app.use(express.json()); //use this middleware to parse JSON bodies
+app.use(rateLimiter); // apply rate limiting middleware
+
+app.use("/api/notes", notesRoutes);
+
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`)
+    });
+});
