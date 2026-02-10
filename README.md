@@ -4,24 +4,22 @@
 
 ## 🚀 Overview
 
-ReThought is an open-source public chat board application where users can freely post and share their thoughts. It's a work-in-progress project designed to explore and demonstrate Node.js development practices, full-stack web development, and modern tech stack integration.
+ReThought is an open-source public note board application where users can freely post and share their thoughts. It's a work-in-progress project designed to explore and demonstrate Node.js development practices, full-stack web development, and modern tech stack integration.
 
 ## ✨ Features
 
-- **Public Chat Board**: Anyone can post their thoughts without authentication
+- **Public Chat Board**: Anyone can post their thoughts
 - **Real-time Updates**: Instant message display and updates
 - **Persistent Storage**: All messages stored in MongoDB
-- **Caching**: Redis integration for improved performance
-- **Responsive Design**: Beautiful UI built with Tailwind CSS
+- **Responsive Design**: UI built with Tailwind CSS
 - **CRUD Operations**: Full create, read, update, delete functionality with Mongoose
-- **Open Source**: Community-driven development
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React
 - **Backend**: Node.js with Express
 - **Database**: MongoDB with Mongoose ODM
-- **Caching**: Redis
+- **Rate Limiting**: Redis
 - **Styling**: Tailwind CSS
 - **License**: Open Source
 
@@ -29,9 +27,7 @@ ReThought is an open-source public chat board application where users can freely
 
 Before you begin, ensure you have the following installed:
 - Node.js (v14+)
-- MongoDB
-- Redis
-- npm or yarn
+everything else will can be installed using the script below
 
 ## 🔧 Installation
 
@@ -39,3 +35,13 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/eeoviosa/ReThought.git
    cd ReThought
+2. **Install the dependencies**
+   ```bash
+   npm run build
+3. **Start the application**
+   ```bash 
+   npm run start
+
+## Deployment
+
+Visit https://rethought.onrender.com for a live demo of the project
