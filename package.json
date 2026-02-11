@@ -1,18 +1,29 @@
 {
   "name": "rethought",
   "version": "1.0.0",
-  "description": "",
+  "description": "A public chat board where anyone can share their thoughts",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend"
+    "start": "npm run start --prefix backend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eeoviosa/ReThought.git"
   },
-  "keywords": [],
+  "keywords": [
+    "note",
+    "board",
+    "nodejs",
+    "react",
+    "mongodb"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
