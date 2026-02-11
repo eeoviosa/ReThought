@@ -175,11 +175,25 @@ ReThought/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit issues and pull requests.
+We love contributions! Before you start, please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+
+### Quick Steps:
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to your branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Our Standards:
+- Read our [Code of Conduct](CODE_OF_CONDUCT.md)
+- Check [DEPENDENCIES.md](DEPENDENCIES.md) for managing packages
+- Review [SECURITY.md](SECURITY.md) for security guidelines
+- Use provided [issue templates](.github/ISSUE_TEMPLATE/) for bug reports and features
 
 ## 📄 License
 
-This project is open source and available under the ISC license.
+This project is open source and available under the ISC license. See [LICENSE](LICENSE) file for details.
+
 
 
 

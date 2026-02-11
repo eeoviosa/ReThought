@@ -1,7 +1,7 @@
 {
   "name": "rethought",
   "version": "1.0.0",
-  "description": "A public chat board where anyone can share their thoughts",
+  "description": "A public note board where anyone can share their thoughts. Built with React, Node.js, and MongoDB.",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
@@ -18,11 +18,18 @@
     "url": "git+https://github.com/eeoviosa/ReThought.git"
   },
   "keywords": [
-    "note",
-    "board",
+    "note-board",
+    "chat-board",
     "nodejs",
     "react",
-    "mongodb"
+    "mongodb",
+    "express",
+    "tailwind-css",
+    "full-stack",
+    "open-source",
+    "vite",
+    "daisyui",
+    "rate-limiting"
   ],
   "author": "",
   "license": "ISC",
